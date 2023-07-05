@@ -103,6 +103,7 @@
                 padding: .8rem;
                 text-decoration: none;
                 background-color: hsl(0, 0%, 100%); /* colors */
+                box-shadow: 0 .1rem .5rem .1rem hsl(257, 40%, 25%);
             }
 
             .card-bottom {
