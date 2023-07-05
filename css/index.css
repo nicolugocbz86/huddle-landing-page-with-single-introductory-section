@@ -10,7 +10,6 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
-        /* font-family: 'Open Sans', sans-serif; */
     }
 
     .attribution {
@@ -20,7 +19,7 @@
 
     .attribution a {
         text-decoration: none;
-        color: hsl(228, 45%, 44%);
+        color: hsl(300, 69%, 71%);
     }
 
 /* MEDIA QUERIES */
@@ -28,7 +27,75 @@
     @media screen and (min-width: 0px) {
 
         /* TAGS */
+
+            body {
+                margin: auto;
+                width: 750px;
+                height: 1600;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                background-color: hsl(257, 40%, 49%);
+                color: hsl(0, 0%, 100%);
+            }
+
         /* CLASS */
+
+            .card,
+            .card-top,
+            .card-middle,
+            .card-bottom {
+                display: flex;
+            }
+
+            .card,
+            .card-top,
+            .card-middle {
+                flex-direction: column;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+
+            .card-top img:nth-child(1) {
+                width: 40%;
+            }
+
+            .card-middle h1,
+            .card-middle p {
+                margin: auto;
+            }
+
+            .card-middle h1 {
+                width: 60%;
+            }
+
+            .card-middle p {
+                width: 42%;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .card-middle a {
+                margin: auto;
+                width: 30%;
+                text-decoration: none;
+                border-radius: 1rem;
+                color: hsl(257, 40%, 49%);
+                background-color: hsl(0, 0%, 100%);
+            }
+
+            .card-bottom {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .card-bottom a {
+                text-decoration: none;
+                color: hsl(0, 0%, 100%);
+            }
         /* ID */
 
     }
