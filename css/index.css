@@ -125,7 +125,58 @@
     @media screen and (min-width: 401px) {
 
         /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
         /* CLASS */
+
+            .card {
+                display: grid;
+                grid-template-areas:
+                'card-top card-middle'
+                'card-top card-bottom';
+                background-image: url(../images/bg-desktop.svg);
+            }
+
+            .card-middle {
+                padding: 9rem 0 0 0;
+            }
+
+            .card-top img:last-child {
+                padding: 0 0 6rem 0;
+            }
+
+            .card-middle h1,
+            .card-middle p,
+            .card-middle a {
+                margin: 0;
+            }
+
+            .card-middle h1,
+            .card-middle p {
+                text-align: left;
+            }
+
+            .card-middle p {
+                width: 79%;
+                font-size: 1rem;
+            }
+
         /* ID */
+
+            #card-top {
+                grid-area: card-top;
+            }
+
+            #card-middle {
+                grid-area: card-middle;
+            }
+
+            #card-bottom {
+                grid-area: card-bottom;
+            }
 
     }
